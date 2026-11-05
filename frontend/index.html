@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal CV and portfolio website">
+  <title>My CV | Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">My<span>CV.</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Welcome to my portfolio</p>
+          <h1>Hi, I'm <span id="hero-name">Your Name</span><br><span class="accent" id="hero-title">A Student &amp; Aspiring Developer</span></h1>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+          </div>
+          <div class="hero-meta">
+            <span>Based in <strong id="hero-location">Bangladesh</strong></span>
+            <span class="meta-divider"></span>
+            <span id="hero-email">your.email@example.com</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Decorative profile illustration">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="profile-card">
+            <div class="profile-avatar" id="avatar-initials">YN</div>
+            <p class="profile-card-label">PERSONAL PROFILE</p>
+            <h2 id="card-name">Your Name</h2>
+            <p id="card-title">Student &amp; Aspiring Developer</p>
+            <div class="card-line"></div>
+            <div class="card-stat-row"><span>Curiosity</span><strong>Always on</strong></div>
+            <div class="card-stat-row"><span>Learning</span><strong>Every day</strong></div>
+          </div>
+          <span class="floating-chip chip-top">✦ Creative thinking</span>
+          <span class="floating-chip chip-bottom">⌘ Building with purpose</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <p class="section-kicker">01 / ABOUT ME</p>
+        <div class="section-heading-row">
+          <h2>A little <span class="accent">about me.</span></h2>
+          <p class="section-intro" id="about-text">My profile information will appear here once it is added to the backend database.</p>
+        </div>
+        <div class="about-details">
+          <div><span class="detail-label">Email</span><a id="about-email" href="mailto:your.email@example.com">your.email@example.com</a></div>
+          <div><span class="detail-label">Phone</span><span id="about-phone">Not provided</span></div>
+          <div><span class="detail-label">Location</span><span id="about-address">Not provided</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="education">
+      <div class="container">
+        <p class="section-kicker">02 / EDUCATION</p>
+        <div class="section-heading-row">
+          <h2>My <span class="accent">education.</span></h2>
+          <p class="section-intro">The academic journey and learning experiences that have shaped me.</p>
+        </div>
+        <div class="timeline-list" id="education-list">
+          <p class="empty-state">Education records will appear here when added through the API.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section-kicker">03 / WHAT I DO</p>
+        <div class="section-heading-row">
+          <h2>Skills &amp; <span class="accent">strengths.</span></h2>
+          <p class="section-intro">A collection of tools and abilities I am developing and using.</p>
+        </div>
+        <div class="skill-grid" id="skills-list">
+          <p class="empty-state">Skills will appear here when added through the API.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="projects">
+      <div class="container">
+        <p class="section-kicker">04 / SELECTED WORK</p>
+        <div class="section-heading-row">
+          <h2>Featured <span class="accent">projects.</span></h2>
+          <p class="section-intro">A selection of projects, experiments, and things I have worked on.</p>
+        </div>
+        <div class="project-grid" id="projects-list">
+          <p class="empty-state">Projects will appear here when added through the API.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="section-kicker">05 / EXPERIENCE</p>
+        <div class="section-heading-row">
+          <h2>Where I've <span class="accent">grown.</span></h2>
+          <p class="section-intro">Experience and opportunities that have helped me build practical skills.</p>
+        </div>
+        <div class="timeline-list" id="experience-list">
+          <p class="empty-state">Experience records will appear here when added through the API.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">06 / GET IN TOUCH</p>
+          <h2>Let's start a <span class="accent">conversation.</span></h2>
+          <p class="contact-copy">Have a question, opportunity, or idea? Send me a message using the form.</p>
+          <a class="contact-email" id="contact-email" href="mailto:your.email@example.com">your.email@example.com</a>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label for="sender_name">Your name</label>
+          <input id="sender_name" name="sender_name" type="text" placeholder="Enter your name" required>
+          <label for="sender_email">Email address</label>
+          <input id="sender_email" name="sender_email" type="email" placeholder="you@example.com" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <button class="button button-primary submit-button" type="submit">Send message <span aria-hidden="true">↗</span></button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">My<span>CV.</span></a>
+      <p>Designed with care · <span id="current-year"></span></p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
